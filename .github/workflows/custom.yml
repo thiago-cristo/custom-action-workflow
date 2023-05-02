@@ -1,0 +1,13 @@
+name: Custom
+
+on: push
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Run custom action
+        uses: thiago-cristo/custom-action@main
